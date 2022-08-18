@@ -1,5 +1,4 @@
 import 'dart:io';
-
 import 'package:chat/components/user_image_picker.dart';
 import 'package:chat/core/models/auth_form_data.dart';
 import 'package:flutter/material.dart';
@@ -61,7 +60,7 @@ class _AuthFormState extends State<AuthForm> {
                   decoration: const InputDecoration(labelText: 'Nome'),
                   validator: (value) {
                     final name = value ?? '';
-                    if (name.trim().length < 4) {
+                    if (name.trim().length < 3) {
                       return 'Nome deve ter ao menos 4 caracteres!';
                     }
                     return null;
